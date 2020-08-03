@@ -66,7 +66,6 @@ enum custom_keycodes {
 #define KC_ALTF2  LALT(KC_F2)
 #define KC_UNDO   LCTL(KC_Z)
 
-#define KC_SFDOT  SFT_T(KC_DOT)
 #define KC_ALTSL  ALT_T(KC_SLASH)
 #define KC_ALTD   ALT_T(KC_D)
 #define KC_CTLESC CTL_T(KC_ESC)
@@ -88,9 +87,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //,-----------------------------------------.                ,-----------------------------------------.
         TAB,     Q,     W,     E,     R,     T,                      Y,     U,     I,     O,     P, ADJST,
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-     CTLESC,     A,     S,     D,     F,     G,                      H,     J,     K,     L,  SCLN, FK_QT,
+        ESC,  SFTA,  CTLS,     D,     F,     G,                      H,     J,     K,     L,  SCLN, FK_QT,
   //|------+------+------+------+------+------|                |------+------+------+------+------+------|
-       LSFT,  SFTZ,  CTLX,     C,     V,     B,                      N,     M,  COMM, SFDOT, ALTSL,  LCTL,
+       LSFT,  SFTZ,  CTLX,     C,     V,     B,                      N,     M,  COMM,   DOT, ALTSL,  LCTL,
   //|------+------+------+------+------+------+------|  |------+------+------+------+------+------+------|
                                  SPECS0,   VIM,   SPC,    SPECS1, NUMS,  LEAD
                               //`--------------------'  `--------------------'
